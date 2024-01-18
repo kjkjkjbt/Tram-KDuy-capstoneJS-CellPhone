@@ -24,4 +24,15 @@ html .change-site-btn {
   height: 100px;
   font-size: 2rem;
   line-height: 85px;
+  border-radius: 50px;
+  background: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+  transition: all 0.8s;
+}
+@media (max-width: 529px) {
+  html .change-site-btn {
+    margin-top: 25vh;
+  }
+}
+html .change-site-btn:hover {
+  background: linear-gradient(225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
 }/*# sourceMappingURL=index.css.map */
