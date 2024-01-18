@@ -1,0 +1,47 @@
+$mobile-width: 530px; 
+$desktop-width: 1024px;  
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+    @content;   
+   } 
+  }  
+@mixin desktop {   @media (min-width: #{$desktop-width}) {     
+    @content;  
+   } 
+  }
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-family: 'Roboto Mono', monospace;
+    ul,li{
+        list-style: none;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    body{
+        background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%);
+    }
+    .change-site-btn{
+        margin-left: 50%;
+        transform: translate(-50%,-50%);  
+        margin-top: 50vh;
+        @include mobile{
+            margin-top: 25vh;
+        }
+        width: 60%;
+        height: 100px;
+        font-size: 2rem;
+        line-height: 85px;
+        border-radius: 50px;
+        background: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+        transition: all 0.8s;
+        
+    }
+    .change-site-btn:hover{
+       background: linear-gradient(225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%) ;
+    }
+}
