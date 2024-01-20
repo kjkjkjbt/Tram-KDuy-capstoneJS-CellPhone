@@ -1,0 +1,64 @@
+$mobile-width: 530px; 
+$desktop-width: 1024px;  
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+    @content;   
+   } 
+  }  
+@mixin desktop {   @media (min-width: #{$desktop-width}) {     
+    @content;  
+   } 
+  }
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-family: 'Roboto Mono', monospace;
+    ul,li{
+        list-style: none;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    body{
+        header{
+            nav{
+                .navbar-brand{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: #CB6CE6 !important;
+                }
+                .nav-item{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    .nav-link{
+                        padding: 10px 20px !important;
+                    }
+                }
+                .dropdown-item  {
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                }
+                .cart{
+                    .nav-link{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        .carousel{
+            .carousel-item{
+                img{
+                    height: 80vh;
+                    width: auto;
+                    overflow: hidden;
+                }
+                h3{
+                    color: gray;
+                }
+            }
+        }
+    }
+}
