@@ -34,8 +34,13 @@ html body header nav .dropdown-item {
 html body header nav .dropdown-item:hover {
   font-weight: 500;
 }
+html body header nav .cart {
+  width: 200px;
+  align-items: center;
+}
 html body header nav .cart .nav-link {
   font-size: 2rem;
+  color: #000;
 }
 html body .myCarousel {
   background-color: #FFD400;
@@ -73,7 +78,7 @@ html body .info .container .catrgoriesItem {
   transition: all 0.5s;
 }
 html body .info .container .catrgoriesItem:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: NONE;
 }
 html body .productList .container {
   background-image: url("https://cdn.tgdd.vn/2023/12/campaign/Tet-FS-1200x120.gif");
@@ -85,24 +90,56 @@ html body .productList .container {
 html body .productList .container .row {
   padding-top: 130px;
 }
-html body .productList .container .row .productItem {
+html body .productList .container .row .productItem .productContainer {
   background-color: #fff;
-  border-radius: 30px;
-  margin: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 20px;
 }
-html body .productList .container .row .productItem .productImage {
+html body .productList .container .row .productItem .productContainer .productImage {
+  padding: 0 20px;
   width: 80%;
   height: auto;
   margin-left: 10%;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-html body .productList .container .row .productItem .productPrice {
+html body .productList .container .row .productItem .productContainer .productName {
+  text-align: center;
+  margin: 0;
+}
+html body .productList .container .row .productItem .productContainer .productPrice {
+  text-align: center;
   color: red;
   font-size: 1.2rem;
   font-weight: 500;
+  line-height: 0.8rem;
 }
-html body .productList .container .row .productItem .productDecs {
+html body .productList .container .row .productItem .productContainer .productDecs {
   font-size: 0.9rem;
   font-weight: 300;
+  margin-bottom: 0px;
+}
+html body .productList .container .row .productItem .productContainer .btn-primary {
+  justify-content: center;
+}
+html body .productList .container .row .productItem .productContainer #viewDetail {
+  width: 40%;
+}
+html body .productList .container .row .productItem .productContainer #addToCart {
+  width: 57%;
+  background-color: #fb6e2e;
+  border-color: #fb6e2e;
+}
+html body .productList .container .row .productItem .productContainer #addToCart:hover {
+  background-color: #c45522;
+  border-color: #c45522;
+}
+html body .productList .container .row .productItem .productContainer .cameraDetail {
+  font-size: 14px;
+}
+html body .productList .container .row .productItem .productContainer .cameraDetail span {
+  background-color: #eaeaea;
+  padding: 3px;
+  border-radius: 3px;
 }/*# sourceMappingURL=customer.css.map */
