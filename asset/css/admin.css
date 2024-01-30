@@ -1,1 +1,9 @@
-/*# sourceMappingURL=admin.css.map */
+.foodTable img {
+  width: 50px;
+  height: 30px;
+  max-width: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=admin.css.map */
