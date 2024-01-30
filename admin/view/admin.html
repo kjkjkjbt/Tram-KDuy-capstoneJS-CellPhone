@@ -162,18 +162,18 @@
               <thead>
                 <tr class="bg-warning text-white">
                   <th>ID</th>
-                  <th>Tên</th>
-                  <th>Loại</th>
-                  <th>Giá</th>
-                  <th>Mô tả</th>
-                  <th>Hình Ảnh</th>
-                  <th>Màn hình</th>
-                  <th>Camera trước</th>
-                  <th>Camera Sau</th>
+                  <th>name</th>
+                  <th>type</th>
+                  <th>price</th>
+                  <th>Desc</th>
+                  <th>Image</th>
+                  <th>Screen</th>
+                  <th>FrontCamera</th>
+                  <th>backCamera</th>
                   <th>Hành động</th>
                 </tr>
               </thead>
-              <tbody id="tbodyFood"></tbody>
+              <tbody id="tbodyFone"></tbody>
             </table>
           </div>
         </main>
@@ -225,7 +225,7 @@
                   <div id="invalidID" class="invalid-feedback"></div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="tenMon">Tên Sản Phẩm</label>
+                  <label for="tenSP">Tên Sản Phẩm</label>
                   <input
                     type="text"
                     class="form-control"
@@ -236,20 +236,20 @@
                   <div id="invalidTen" class="invalid-form"></div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="loai">Loại Sản Phẩm</label>
+                  <label for="type">Loại Sản Phẩm</label>
                   <select
                     class="custom-select d-block w-100"
-                    id="loai"
+                    id="type"
                     required
                   >
                     <option value="">Chọn loại</option>
-                    <option value="Samsung">Samsung</option>
-                    <option value="Iphone">Iphone</option>
+                    <option value="loai1">Samsung</option>
+                    <option value="loai2">Iphone</option>
                   </select>
                   <div id="invalidLoai" class="invalid-feedback"></div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="giaMon">Giá</label>
+                  <label for="giaSP">Giá</label>
                   <input
                     type="text"
                     class="form-control"
@@ -274,11 +274,11 @@
                   <div id="invalidGia" class="invalid-feedback"></div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="camTruoc">Camera Trước</label>
+                  <label for="frontcam">Camera Trước</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="camTruoc"
+                    id="frontcam"
                     placeholder="Nhập giá"
                     value=""
                     required
@@ -286,11 +286,11 @@
                   <div id="invalidGia" class="invalid-feedback"></div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="camSau">Camera Sau</label>
+                  <label for="backcam">Camera Sau</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="camSau"
+                    id="backcam"
                     placeholder="Nhập giá"
                     value=""
                     required
@@ -300,11 +300,11 @@
               </div>
               <div class="mb-3">
                 <div class="form-group">
-                  <label for="hinhSP">Hình Ảnh</label>
+                  <label for="image">Hình Ảnh sp</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="hinhSP"
+                    id="img"
                     placeholder="Nhập hình ảnh"
                     value=""
                     required
@@ -313,9 +313,9 @@
               </div>
 
               <div class="mb-3">
-                <label for="moTa">Mô Tả</label>
-                <textarea class="form-control" id="moTa" rows="3"></textarea>
-                <div id="invalidMoTa" class="invalid-form"></div>
+                <label for="Desc">Mô Tả</label>
+                <textarea class="form-control" id="des" rows="3"></textarea>
+                <div id="invaliddesc" class="invalid-form"></div>
               </div>
             </form>
           </div>
@@ -327,10 +327,16 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-warning" id="btnCapNhat">
+            <button 
+            type="button"  
+            class="btn btn-warning" id="btnCapNhat"
+            onclick="updateFone()">
               Cập Nhật
             </button>
-            <button type="button" class="btn btn-warning" id="btnThemMon">
+            <button 
+            type="button" 
+            class="btn btn-warning" id="btnAdd"
+            onclick="addFone()">
               Thêm
             </button>
           </div>
