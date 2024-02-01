@@ -17,29 +17,55 @@
       crossorigin="anonymous"
     />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- MyCSS -->
     <link rel="stylesheet" href="../../asset/css/customer.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="../../asset/images/logoIcon.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#"
+          ><img src="../../asset/images/logoIcon.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
-            </li><li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">Customer</a>
-            </li><li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">Admin</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Categories
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -49,132 +75,252 @@
             </li>
           </ul>
           <div class="cart">
-            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
           </div>
         </div>
+      </nav>
     </header>
-    <div class="myCarousel">
+    <div class="myCarousel" style="margin-top: 80px">
       <div class="myCarouselItem"></div>
     </div>
     <div class="info mb-5">
       <div class="container_sm">
         <div class="row">
           <div class="col-xl-6 col-sm-12">
-            <div class="categoriesItem1 categoriesItem">
-            </div>
+            <div class="categoriesItem1 categoriesItem"></div>
           </div>
           <div class="col-xl-6 col-sm-12">
-            <div class="categoriesItem2 categoriesItem">
-            </div>
+            <div class="categoriesItem2 categoriesItem"></div>
           </div>
         </div>
       </div>
     </div>
     <div class="productList">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-3 col-sm-6 productItem">
+        <div class="row" id="productList">
+          <!-- <div class="col-xl-3 col-sm-6 productItem">
             <div class="productContainer">
-              <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/311353/gigabyte-g5-i5-mf-f2vn313sh-thumb-600x600.jpg" alt="" class="productImage" id="image">
-              <p class="productName" id="name"> Laptop mờ si</p>
-              <p class="productPrice" id="price"> 999 chẹo</p>
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/311353/gigabyte-g5-i5-mf-f2vn313sh-thumb-600x600.jpg"
+                alt=""
+                class="productImage"
+                id="image"
+              />
+              <p class="productName" id="name">Laptop mờ si</p>
+              <p class="productPrice" id="price">999 chẹo</p>
               <span class="cameraDetail">
                 <span class="productBackCam" id="backCamera">12 MP</span>
                 <span class="productFontCam" id="fontCamera">64 MP</span>
                 <span class="productScreen" id="screen">6,7"</span>
               </span>
-              <p class="productDecs" id="decs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, nulla?</p>
-              <span style="display: block; margin-top: 10px;"> 
-                <button class="btn btn-primary" id="viewDetail">Chi Tiết</button>
+              <p class="productDecs" id="decs">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Assumenda, nulla?
+              </p>
+              <span style="display: block; margin-top: 10px">
+                <button class="btn btn-primary" id="viewDetail">
+                  Chi Tiết
+                </button>
                 <button class="btn btn-primary" id="addToCart">Mua Ngay</button>
               </span>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 productItem">
             <div class="productContainer">
-              <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/311353/gigabyte-g5-i5-mf-f2vn313sh-thumb-600x600.jpg" alt="" class="productImage" id="image">
-              <p class="productName" id="name"> Laptop mờ si</p>
-              <p class="productPrice" id="price"> 999 chẹo</p>
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/311353/gigabyte-g5-i5-mf-f2vn313sh-thumb-600x600.jpg"
+                alt=""
+                class="productImage"
+                id="image"
+              />
+              <p class="productName" id="name">Laptop mờ si</p>
+              <p class="productPrice" id="price">999 chẹo</p>
               <span class="cameraDetail">
                 <span class="productBackCam" id="backCamera">12 MP</span>
                 <span class="productFontCam" id="fontCamera">64 MP</span>
                 <span class="productScreen" id="screen">6,7"</span>
               </span>
-              <p class="productDecs" id="decs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, nulla?</p>
-              <span style="display: block; margin-top: 10px;"> 
-                <button class="btn btn-primary" id="viewDetail">Chi Tiết</button>
+              <p class="productDecs" id="decs">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Assumenda, nulla?
+              </p>
+              <span style="display: block; margin-top: 10px">
+                <button class="btn btn-primary" id="viewDetail">
+                  Chi Tiết
+                </button>
                 <button class="btn btn-primary" id="addToCart">Mua Ngay</button>
               </span>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 productItem">
             <div class="productContainer">
-              <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/311353/gigabyte-g5-i5-mf-f2vn313sh-thumb-600x600.jpg" alt="" class="productImage" id="image">
-              <p class="productName" id="name"> Laptop mờ si</p>
-              <p class="productPrice" id="price"> 999 chẹo</p>
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/311353/gigabyte-g5-i5-mf-f2vn313sh-thumb-600x600.jpg"
+                alt=""
+                class="productImage"
+                id="image"
+              />
+              <p class="productName" id="name">Laptop mờ si</p>
+              <p class="productPrice" id="price">999 chẹo</p>
               <span class="cameraDetail">
                 <span class="productBackCam" id="backCamera">12 MP</span>
                 <span class="productFontCam" id="fontCamera">64 MP</span>
                 <span class="productScreen" id="screen">6,7"</span>
               </span>
-              <p class="productDecs" id="decs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, nulla?</p>
-              <span style="display: block; margin-top: 10px;"> 
-                <button class="btn btn-primary" id="viewDetail">Chi Tiết</button>
+              <p class="productDecs" id="decs">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Assumenda, nulla?
+              </p>
+              <span style="display: block; margin-top: 10px">
+                <button class="btn btn-primary" id="viewDetail">
+                  Chi Tiết
+                </button>
                 <button class="btn btn-primary" id="addToCart">Mua Ngay</button>
               </span>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 productItem">
             <div class="productContainer">
-              <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/311353/gigabyte-g5-i5-mf-f2vn313sh-thumb-600x600.jpg" alt="" class="productImage" id="image">
-              <p class="productName" id="name"> Laptop mờ si</p>
-              <p class="productPrice" id="price"> 999 chẹo</p>
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/311353/gigabyte-g5-i5-mf-f2vn313sh-thumb-600x600.jpg"
+                alt=""
+                class="productImage"
+                id="image"
+              />
+              <p class="productName" id="name">Laptop mờ si</p>
+              <p class="productPrice" id="price">999 chẹo</p>
               <span class="cameraDetail">
                 <span class="productBackCam" id="backCamera">12 MP</span>
                 <span class="productFontCam" id="fontCamera">64 MP</span>
                 <span class="productScreen" id="screen">6,7"</span>
               </span>
-              <p class="productDecs" id="decs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, nulla?</p>
-              <span style="display: block; margin-top: 10px;"> 
-                <button class="btn btn-primary" id="viewDetail">Chi Tiết</button>
+              <p class="productDecs" id="decs">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Assumenda, nulla?
+              </p>
+              <span style="display: block; margin-top: 10px">
+                <button class="btn btn-primary" id="viewDetail">
+                  Chi Tiết
+                </button>
                 <button class="btn btn-primary" id="addToCart">Mua Ngay</button>
               </span>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 productItem">
             <div class="productContainer">
-              <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/311353/gigabyte-g5-i5-mf-f2vn313sh-thumb-600x600.jpg" alt="" class="productImage" id="image">
-              <p class="productName" id="name"> Laptop mờ si</p>
-              <p class="productPrice" id="price"> 999 chẹo</p>
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/311353/gigabyte-g5-i5-mf-f2vn313sh-thumb-600x600.jpg"
+                alt=""
+                class="productImage"
+                id="image"
+              />
+              <p class="productName" id="name">Laptop mờ si</p>
+              <p class="productPrice" id="price">999 chẹo</p>
               <span class="cameraDetail">
                 <span class="productBackCam" id="backCamera">12 MP</span>
                 <span class="productFontCam" id="fontCamera">64 MP</span>
                 <span class="productScreen" id="screen">6,7"</span>
               </span>
-              <p class="productDecs" id="decs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, nulla?</p>
-              <span style="display: block; margin-top: 10px;"> 
-                <button class="btn btn-primary" id="viewDetail">Chi Tiết</button>
+              <p class="productDecs" id="decs">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Assumenda, nulla?
+              </p>
+              <span style="display: block; margin-top: 10px">
+                <button class="btn btn-primary" id="viewDetail">
+                  Chi Tiết
+                </button>
                 <button class="btn btn-primary" id="addToCart">Mua Ngay</button>
               </span>
             </div>
-          </div>
-          
+          </div> -->
         </div>
       </div>
     </div>
-
-  <footer class="container">
-    <h3 class="text-center mb-5">Contact Us</h3>
-    <div class="row">
+    <div
+      class="modal fade bd-example-modal-lg"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+      id="productDetailModal"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-8">
+              <img
+                src="https://loremflickr.com/cache/resized/65535_53458464447_05760abfec_z_640_480_nofilter.jpg"
+                alt=""
+                id="phoneImage"
+                style="
+                  width: 80%;
+                  height: auto;
+                  margin-left: 10%;
+                  margin-top: 10%;
+                "
+              />
+            </div>
+            <div class="col-4 mb-2">
+              <h4 id="phoneName" class="mt-2"></h4>
+              <hr />
+              <p id="phonePrice" class="text-red"></p>
+              <hr />
+              <p id="phoneFrontCam"></p>
+              <hr />
+              <p id="phoneBackCam"></p>
+              <hr />
+              <p id="phoneScreen"></p>
+              <hr />
+              <p id="phoneDesc"></p>
+              <hr />
+              <span class="btnGroup phoneBackCam">
+                <button class="btn btn-primary">Them Vo Gio Hang</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <h3 class="text-center mb-5">Contact Us</h3>
+      <div class="row">
         <div class="col-8">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.7496168241278!2d106.67574337480565!3d10.830463389321606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529d5c459ba27%3A0xc82bf04d8e034311!2zUGhvbmcgVsWp!5e0!3m2!1svi!2s!4v1705766870549!5m2!1svi!2s" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.7496168241278!2d106.67574337480565!3d10.830463389321606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529d5c459ba27%3A0xc82bf04d8e034311!2zUGhvbmcgVsWp!5e0!3m2!1svi!2s!4v1705766870549!5m2!1svi!2s"
+            width="100%"
+            height="400px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div class="col-4">
           <h4 class="text-canter">Lorem ipsum dolor sit amet.</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laborum atque, soluta saepe consequatur fuga a! Molestias nulla provident, excepturi voluptates rerum molestiae velit optio quisquam eligendi mollitia repudiandae vero at. Repellat maiores aperiam in sapiente necessitatibus totam amet at eius dolorum soluta. Laboriosam totam iusto vero, accusamus quam suscipit recusandae laudantium itaque labore ullam rerum debitis veritatis, doloribus, enim nulla officiis! Quae rerum vitae, sequi veniam ullam est repudiandae amet natus a dolores illo inventore, nihil provident voluptatem minus numquam magnam atque doloribus eum optio.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            laborum atque, soluta saepe consequatur fuga a! Molestias nulla
+            provident, excepturi voluptates rerum molestiae velit optio quisquam
+            eligendi mollitia repudiandae vero at. Repellat maiores aperiam in
+            sapiente necessitatibus totam amet at eius dolorum soluta.
+            Laboriosam totam iusto vero, accusamus quam suscipit recusandae
+            laudantium itaque labore ullam rerum debitis veritatis, doloribus,
+            enim nulla officiis! Quae rerum vitae, sequi veniam ullam est
+            repudiandae amet natus a dolores illo inventore, nihil provident
+            voluptatem minus numquam magnam atque doloribus eum optio.
+          </p>
         </div>
-    </div>
-  </footer>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -192,5 +338,15 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- AXIOS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+      integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- MyJS -->
+    <script type="module" src="../../service/service.js"></script>
+    <script type="module" src="../controller/customer.js"></script>
   </body>
 </html>
