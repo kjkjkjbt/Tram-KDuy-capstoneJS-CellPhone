@@ -1,6 +1,6 @@
-import productServices from "../../service/service.js";
+import foneService from "../../service/service.js";
 const fetchProductList = () => {
-  productServices
+  foneService
     .getProductListAPI()
     .then(function (res) {
       let contentHTML = "";
@@ -48,7 +48,7 @@ const viewProductDetail = (id) => {
   let index = id;
   console.log(id);
   $("#productDetailModal").modal("show");
-  productServices
+  foneService
     .getProductListAPI()
     .then(function (res) {
       let productArr = res.data;
