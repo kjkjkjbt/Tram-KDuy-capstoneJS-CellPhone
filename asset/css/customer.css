@@ -36,7 +36,7 @@ html body header nav .dropdown-item:hover {
 }
 html body header nav .cart {
   width: 200px;
-  align-items: center;
+  text-align: right;
 }
 html body header nav .cart .nav-link {
   font-size: 2rem;
