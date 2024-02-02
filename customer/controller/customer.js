@@ -29,7 +29,7 @@ const fetchProductList = () => {
             <button onclick="viewProductDetail(${item.id})" class="btn btn-primary" id="viewDetail">
               Chi Tiết
             </button>
-            <button class="btn btn-primary" id="addToCart">Mua Ngay</button>
+            <button onclick="addToCart(${item.id})" class="btn btn-primary" id="addToCart">Mua Ngay</button>
           </span>
         </div>
       </div>`;
